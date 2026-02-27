@@ -93,23 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Form Handler
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
-            btn.disabled = true;
 
-            setTimeout(() => {
-                alert('Success! Your inquiry has been received. Our engineering team will contact you within 12 hours.');
-                btn.innerHTML = 'Inquiry Sent Successfully';
-                btn.style.background = '#48bb78';
-                contactForm.reset();
-            }, 1800);
-        });
-    }
 
     // Counter Animation
     const counters = document.querySelectorAll('.counter');
