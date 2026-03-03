@@ -191,7 +191,7 @@ header {
 }
 
 .hero {
-    min-height: 85vh;
+    min-height: clamp(500px, 85vh, 800px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -266,7 +266,7 @@ header {
 
 /* Hero Sub (for subpages) */
 .hero-sub {
-    min-height: 40vh !important;
+    min-height: clamp(250px, 40vh, 400px) !important;
     padding-top: 160px !important;
     background: var(--bg-alt);
     display: flex !important;
